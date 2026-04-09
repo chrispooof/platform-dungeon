@@ -1,0 +1,149 @@
+[gd_scene format=4 uid="uid://dqoxi3coj34o1"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_fyrmo"]
+_data = PackedByteArray("AAADAAUAAAABAAAACwAAAAoAAABQAAAAUklGRkgAAABXRUJQVlA4TDsAAAAvCkACEBcgEEiiXn8NIUHCYv83hQQJ/4OXnf+AfwWKYtug3lgRhEa/pShKKEyJiP4HGLCf/Xa6crlwBQA=")
+size_override = Vector2(11, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fyrmo"]
+size = Vector2(52, 10)
+
+[node name="Spikes" type="Area2D" unique_id=164710090]
+
+[node name="SpikeGroup" type="Node2D" parent="." unique_id=1837488409]
+
+[node name="Spike1" type="Sprite2D" parent="SpikeGroup" unique_id=463507538]
+texture_filter = 1
+texture = SubResource("PortableCompressedTexture2D_fyrmo")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://assets/spike.aseprite",
+"source_uid": 6420110042186153062
+}
+metadata/_aseprite_wizard_source_file_hash_ = "ead6a943af471f76c280d9fe1734cd95"
+
+[node name="Spike2" type="Sprite2D" parent="SpikeGroup" unique_id=1994436712]
+texture_filter = 1
+position = Vector2(10, 0)
+texture = SubResource("PortableCompressedTexture2D_fyrmo")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://assets/spike.aseprite",
+"source_uid": 6420110042186153062
+}
+metadata/_aseprite_wizard_source_file_hash_ = "ead6a943af471f76c280d9fe1734cd95"
+
+[node name="Spike3" type="Sprite2D" parent="SpikeGroup" unique_id=101987205]
+texture_filter = 1
+position = Vector2(-10, 0)
+texture = SubResource("PortableCompressedTexture2D_fyrmo")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://assets/spike.aseprite",
+"source_uid": 6420110042186153062
+}
+metadata/_aseprite_wizard_source_file_hash_ = "ead6a943af471f76c280d9fe1734cd95"
+
+[node name="Spike4" type="Sprite2D" parent="SpikeGroup" unique_id=515499425]
+texture_filter = 1
+position = Vector2(20, 0)
+texture = SubResource("PortableCompressedTexture2D_fyrmo")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://assets/spike.aseprite",
+"source_uid": 6420110042186153062
+}
+metadata/_aseprite_wizard_source_file_hash_ = "ead6a943af471f76c280d9fe1734cd95"
+
+[node name="Spike5" type="Sprite2D" parent="SpikeGroup" unique_id=484280225]
+texture_filter = 1
+position = Vector2(-20, 0)
+texture = SubResource("PortableCompressedTexture2D_fyrmo")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://assets/spike.aseprite",
+"source_uid": 6420110042186153062
+}
+metadata/_aseprite_wizard_source_file_hash_ = "ead6a943af471f76c280d9fe1734cd95"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=716118679]
+shape = SubResource("RectangleShape2D_fyrmo")

@@ -1,0 +1,37 @@
+[gd_scene format=4 uid="uid://bm45opttil1cu"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_heo1g"]
+_data = PackedByteArray("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")
+size_override = Vector2(1100, 650)
+
+[node name="EastRoom" type="StaticBody2D" unique_id=1891704394]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1996638778]
+texture_filter = 1
+position = Vector2(550, 325)
+texture = SubResource("PortableCompressedTexture2D_heo1g")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://assets/one_entrance_east_west_frame.aseprite",
+"source_uid": 8888343337926650893
+}
+metadata/_aseprite_wizard_source_file_hash_ = "1e65b995f2e682ae59964eb5af1fad90"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=600454592]
+polygon = PackedVector2Array(0, 0, 0, 274, 2, 276, 14, 276, 19, 271, 19, 19, 1081, 19, 1081, 631, 19, 631, 19, 396, 94, 396, 99, 391, 99, 379, 94, 374, 0, 374, 0, 650, 1100, 650, 1100, 0)

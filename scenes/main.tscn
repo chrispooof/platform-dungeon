@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://w4wg2wajs5ok"]
+
+[ext_resource type="Script" uid="uid://csyrm6g285i43" path="res://src/main.gd" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://o8c6l05o65sp" path="res://scenes/player/player.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://cuxwqqdjfmcui" path="res://scenes/rooms/hud.tscn" id="3_sugp2"]
+
+[node name="Main" type="Node2D" unique_id=429631094]
+script = ExtResource("1_o5qli")
+
+[node name="RoomManager" type="Node" parent="." unique_id=174181562]
+
+[node name="Frame" type="Node2D" parent="RoomManager" unique_id=1167424425]
+
+[node name="Player" parent="." unique_id=820395575 instance=ExtResource("2_0wfyh")]
+
+[node name="HUD" parent="." unique_id=1769488607 instance=ExtResource("3_sugp2")]

@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://cvy1kp4lq42kq"
+path="res://.godot/imported/frame.aseprite-ccd4b6fc6cc0e3c208304676ea0b8c31.res"
+
+[deps]
+
+source_file="res://assets/frame.aseprite"
+dest_files=["res://.godot/imported/frame.aseprite-ccd4b6fc6cc0e3c208304676ea0b8c31.res"]
+
+[params]
+

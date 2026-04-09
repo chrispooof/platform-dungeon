@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://cuxwqqdjfmcui"]
+
+[ext_resource type="Script" uid="uid://cys2bkbc8lees" path="res://src/hud/hud.gd" id="1_vxiw6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cqjsj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+
+[node name="HUD" type="CanvasLayer" unique_id=1769488607]
+script = ExtResource("1_vxiw6")
+
+[node name="MiniMapIndicator" type="Control" parent="." unique_id=1588878883]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 68.0
+offset_bottom = 50.0
+
+[node name="IndicatorBorder" type="Panel" parent="MiniMapIndicator" unique_id=1280482854]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cqjsj")
+
+[node name="IndicatorDot" type="ColorRect" parent="MiniMapIndicator" unique_id=1371007491]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 4.0
+color = Color(1, 0, 0, 1)
+
+[node name="FullMap" type="Panel" parent="." unique_id=88093991]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MapTitle" type="Label" parent="FullMap" unique_id=1728413665]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "MAP"
+
+[node name="RoomGrid" type="Control" parent="FullMap" unique_id=1347505601]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -120.0
+offset_right = 120.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="tile_north_room" type="Panel" parent="FullMap/RoomGrid" unique_id=2042719300]
+layout_mode = 0
+offset_left = 80.0
+offset_right = 156.0
+offset_bottom = 76.0
+
+[node name="tile_east_room" type="Panel" parent="FullMap/RoomGrid" unique_id=1166444108]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 80.0
+offset_right = 236.0
+offset_bottom = 156.0
+
+[node name="tile_south_room" type="Panel" parent="FullMap/RoomGrid" unique_id=687914162]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 160.0
+offset_right = 156.0
+offset_bottom = 236.0
+
+[node name="tile_west_room" type="Panel" parent="FullMap/RoomGrid" unique_id=1532460559]
+layout_mode = 0
+offset_top = 80.0
+offset_right = 76.0
+offset_bottom = 156.0
+
+[node name="tile_central_room" type="Panel" parent="FullMap/RoomGrid" unique_id=501261007]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 80.0
+offset_right = 156.0
+offset_bottom = 156.0
+
+[node name="FullMapDot" type="ColorRect" parent="FullMap/RoomGrid" unique_id=700077474]
+layout_mode = 0
+offset_right = 6.0
+offset_bottom = 6.0
+color = Color(1, 0, 0, 1)
+
+[node name="CloseHint" type="Label" parent="FullMap" unique_id=187333543]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -35.5
+offset_top = -23.0
+offset_right = 35.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "[M] Close"
