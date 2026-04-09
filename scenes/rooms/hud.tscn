@@ -36,6 +36,14 @@ offset_right = 4.0
 offset_bottom = 4.0
 color = Color(1, 0, 0, 1)
 
+[node name="GeometryLayer" type="Control" parent="MiniMapIndicator" unique_id=1915886334]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="FullMap" type="Panel" parent="." unique_id=88093991]
 anchors_preset = 15
 anchor_right = 1.0

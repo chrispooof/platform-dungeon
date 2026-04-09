@@ -16,6 +16,10 @@ TBA
 
 TBA
 
+### Climb Chain and Ladders
+
+TBA
+
 ## Requirements
 
 - Godot 4.6.1+

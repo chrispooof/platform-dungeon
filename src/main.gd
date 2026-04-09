@@ -20,6 +20,9 @@ var explored_rooms: Dictionary = {
 	"north_room": false,
 	"south_room": false
 }
+const PLATFORM_SIZE := Vector2(107.0, 22.0)
+const TRAP_SIZE     := Vector2(52.0, 12.0)
+var room_map_data: Dictionary = {}  # room_name -> {platforms: [Rect2], traps: [Rect2]}
 
 
 # Called when the node enters the scene tree for the first time.
