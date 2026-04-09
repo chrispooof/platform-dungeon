@@ -20,9 +20,7 @@ var explored_rooms: Dictionary = {
 	"north_room": false,
 	"south_room": false
 }
-const PLATFORM_SIZE := Vector2(107.0, 22.0)
-const TRAP_SIZE     := Vector2(52.0, 12.0)
-var room_map_data: Dictionary = {}  # room_name -> {platforms: [Rect2], traps: [Rect2]}
+var room_map_data: Dictionary = {}  # room_name -> {platforms: [Rect2]}
 
 
 # Called when the node enters the scene tree for the first time.
@@ -37,6 +35,7 @@ func _ready() -> void:
 	frame.add_child(start_room_instance)
 	current_room = start_room_instance
 	explored_rooms[current_room_name] = true  # Mark the starting room as explored.
+	_extract_room_data(current_room, current_room_name)
 
 	# Add the player to the main scene and set its position to the start position.
 	player.position = current_room.get_node("SpawnPoints/StartPosition").position
@@ -51,4 +50,22 @@ func _process(delta: float) -> void:
 	var local_x = (player.global_position.x - room_bounds.position.x) / room_bounds.size.x
 	var local_y = (player.global_position.y - room_bounds.position.y) / room_bounds.size.y
 
-	$HUD.update_minimap(current_room_name, Vector2(local_x, local_y), explored_rooms)
+	$HUD.update_minimap(current_room_name, Vector2(local_x, local_y), explored_rooms, room_map_data)
+
+
+func _extract_room_data(room: Node2D, room_name: String) -> void:
+	"""Extracts the platform data from the given room and stores it in the room_map_data dictionary.
+	This data is used to represent the room's geometry on the full map and minimap.
+	"""
+	var data := {"platforms": []}
+
+	var platforms_node := room.get_node_or_null("Platforms")
+	if platforms_node:
+		for child in platforms_node.get_children():
+			# child.position is the node's origin; treat it as the center
+			var rect := Rect2(
+				child.position - Constants.PLATFORM_SIZE * 0.5, Constants.PLATFORM_SIZE
+			)
+			data["platforms"].append(rect)
+
+	room_map_data[room_name] = data

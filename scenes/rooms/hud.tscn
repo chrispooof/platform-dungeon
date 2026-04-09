@@ -76,39 +76,6 @@ offset_bottom = 120.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="tile_north_room" type="Panel" parent="FullMap/RoomGrid" unique_id=2042719300]
-layout_mode = 0
-offset_left = 80.0
-offset_right = 156.0
-offset_bottom = 76.0
-
-[node name="tile_east_room" type="Panel" parent="FullMap/RoomGrid" unique_id=1166444108]
-layout_mode = 0
-offset_left = 160.0
-offset_top = 80.0
-offset_right = 236.0
-offset_bottom = 156.0
-
-[node name="tile_south_room" type="Panel" parent="FullMap/RoomGrid" unique_id=687914162]
-layout_mode = 0
-offset_left = 80.0
-offset_top = 160.0
-offset_right = 156.0
-offset_bottom = 236.0
-
-[node name="tile_west_room" type="Panel" parent="FullMap/RoomGrid" unique_id=1532460559]
-layout_mode = 0
-offset_top = 80.0
-offset_right = 76.0
-offset_bottom = 156.0
-
-[node name="tile_central_room" type="Panel" parent="FullMap/RoomGrid" unique_id=501261007]
-layout_mode = 0
-offset_left = 80.0
-offset_top = 80.0
-offset_right = 156.0
-offset_bottom = 156.0
-
 [node name="FullMapDot" type="ColorRect" parent="FullMap/RoomGrid" unique_id=700077474]
 layout_mode = 0
 offset_right = 6.0
