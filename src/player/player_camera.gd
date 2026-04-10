@@ -10,7 +10,3 @@ func _ready() -> void:
 	self.limit_top = 0
 	self.limit_right = Constants.SCREEN_WIDTH
 	self.limit_bottom = Constants.SCREEN_HEIGHT
-
-
-func _process(delta: float) -> void:
-	pass

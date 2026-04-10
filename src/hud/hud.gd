@@ -14,6 +14,7 @@ const ROOM_GRID := {
 @onready var full_map: Panel = $FullMap
 @onready var room_grid: Control = $FullMap/RoomGrid
 @onready var full_map_dot: ColorRect = $FullMap/RoomGrid/FullMapDot
+@onready var interact_prompt: Label = $InteractPrompt
 
 var _room_tiles: Dictionary = {}  # room_name -> Panel
 var _tile_geo: Dictionary = {}  # room_name -> [ColorRect]  (geometry on full map tiles)
@@ -28,6 +29,7 @@ func _ready() -> void:
 	and building the room tiles for the full map based on the defined ROOM_GRID.
 	"""
 	full_map.visible = false
+	interact_prompt.visible = false
 	build_room_tiles()
 	indicator_dot.color = Constants.COLOR_DOT
 	indicator_dot.size = Constants.DOT_SIZE_MINI
@@ -103,14 +105,15 @@ func build_room_tiles() -> void:
 	"""Builds the grid of room tiles for the full map based on the defined ROOM_GRID.
 	Each tile is created as a Panel node, styled, and positioned according to its grid coordinates.
 	"""
+	var offset := room_grid.size * 0.5 - Vector2(1, 1) * Constants.TILE_STEP
 	for room_name in ROOM_GRID:
 		var grid_pos: Vector2i = ROOM_GRID[room_name]
 		var tile := Panel.new()
 		tile.name = "tile_" + room_name
 		tile.size = Vector2(Constants.TILE_SIZE, Constants.TILE_SIZE)
 		tile.position = Vector2(
-			grid_pos.x * Constants.TILE_STEP - Constants.TILE_SIZE * 0.5,
-			grid_pos.y * Constants.TILE_STEP - Constants.TILE_SIZE * 0.5
+			offset.x + grid_pos.x * Constants.TILE_STEP - Constants.TILE_SIZE * 0.5,
+			offset.y + grid_pos.y * Constants.TILE_STEP - Constants.TILE_SIZE * 0.5
 		)
 		room_grid.add_child(tile)
 		_room_tiles[room_name] = tile
