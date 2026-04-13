@@ -1,13 +1,27 @@
 [gd_scene format=4 uid="uid://ch13vf2hl03ym"]
 
 [ext_resource type="PackedScene" uid="uid://bp6m4w5ix47gl" path="res://scenes/platforms/platform.tscn" id="1_c4but"]
+[ext_resource type="Script" uid="uid://cu1la4m5yfxnd" path="res://src/rooms/central_room.gd" id="1_d04ri"]
 [ext_resource type="PackedScene" uid="uid://ctw1ocr1y5j07" path="res://scenes/interactables/chain.tscn" id="2_l8n7o"]
 
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_c4but"]
 _data = PackedByteArray("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")
 size_override = Vector2(1100, 650)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l8n7o"]
+size = Vector2(98, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d04ri"]
+size = Vector2(14, 98)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gn5jc"]
+size = Vector2(98, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mjlc"]
+size = Vector2(14, 98)
+
 [node name="CentralRoom" type="StaticBody2D" unique_id=920663062]
+script = ExtResource("1_d04ri")
 
 [node name="Walls" type="Sprite2D" parent="." unique_id=1275506324]
 texture_filter = 1
@@ -46,12 +60,15 @@ polygon = PackedVector2Array(556, -83, 556, -69, 561, -64, 1038, -64, 1038, 188,
 [node name="SouthWestWall" type="CollisionPolygon2D" parent="." unique_id=318419126]
 position = Vector2(1057, 566)
 rotation = -3.1415925
-polygon = PackedVector2Array(556, -83, 556, -69, 561, -64, 1038, -64, 1038, 166.99982, 1035.0001, 169.99982, 963.00006, 169.99982, 958.00006, 174.99982, 958.00006, 186.99982, 963.00006, 191.99982, 1055.0001, 191.99982, 1057.0001, 189.99982, 1057, -83)
+polygon = PackedVector2Array(556, -84.00012, 556, -70.00012, 561, -65.00012, 1038, -65.00018, 1038, 166.99982, 1035.0001, 169.99982, 963.00006, 169.99982, 958.00006, 174.99982, 958.00006, 186.99982, 963.00006, 191.99982, 1055.0001, 191.99982, 1057.0001, 189.99982, 1057, -84.00018)
 
 [node name="SouthEastWall" type="CollisionPolygon2D" parent="." unique_id=566035657]
 position = Vector2(1100, 650)
 rotation = -3.1415925
 polygon = PackedVector2Array(0, 0, 0.00012207031, 273.99997, 2.000122, 275.99997, 94.00006, 275.99997, 99.00006, 270.99997, 99.00006, 258.99997, 94.00006, 253.99997, 22.000122, 253.99997, 19.000122, 250.99997, 19, 19, 277.7279, 19, 496, 19, 501, 14, 501, 0)
+
+[node name="Chain" parent="." unique_id=843101267 instance=ExtResource("2_l8n7o")]
+position = Vector2(550, 137)
 
 [node name="SpawnPoints" type="Node2D" parent="." unique_id=1670053769]
 
@@ -78,5 +95,37 @@ position = Vector2(325, 360)
 [node name="EastPlatform" parent="Platforms" unique_id=146318517 instance=ExtResource("1_c4but")]
 position = Vector2(775, 360)
 
-[node name="Chain" parent="." unique_id=843101267 instance=ExtResource("2_l8n7o")]
-position = Vector2(550, 136)
+[node name="EgressPoints" type="Node2D" parent="." unique_id=697921605]
+
+[node name="NorthExit" type="Area2D" parent="EgressPoints" unique_id=1248619949]
+position = Vector2(550, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EgressPoints/NorthExit" unique_id=413084047]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_l8n7o")
+
+[node name="EastExit" type="Area2D" parent="EgressPoints" unique_id=1248093689]
+position = Vector2(1100, 325)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EgressPoints/EastExit" unique_id=1105842869]
+position = Vector2(-7, 0)
+shape = SubResource("RectangleShape2D_d04ri")
+
+[node name="SouthExit" type="Area2D" parent="EgressPoints" unique_id=1401789971]
+position = Vector2(550, 650)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EgressPoints/SouthExit" unique_id=491993646]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_gn5jc")
+
+[node name="WestExit" type="Area2D" parent="EgressPoints" unique_id=1222007282]
+position = Vector2(0, 325)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EgressPoints/WestExit" unique_id=920477266]
+position = Vector2(7, 0)
+shape = SubResource("RectangleShape2D_7mjlc")
+
+[connection signal="body_entered" from="EgressPoints/NorthExit" to="." method="_on_north_exit_body_entered"]
+[connection signal="body_entered" from="EgressPoints/EastExit" to="." method="_on_east_exit_body_entered"]
+[connection signal="body_entered" from="EgressPoints/SouthExit" to="." method="_on_south_exit_body_entered"]
+[connection signal="body_entered" from="EgressPoints/WestExit" to="." method="_on_west_exit_body_entered"]

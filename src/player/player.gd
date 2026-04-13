@@ -7,7 +7,8 @@ var is_on_chain: bool = false
 var chain_x_position: float = 0.0
 var nearby_chain = null
 
-func  _process(delta: float) -> void:
+
+func _process(delta: float) -> void:
 	"""This function is called every frame and can be used to handle any 
 	per-frame logic or updates needed for the player character.
 	"""

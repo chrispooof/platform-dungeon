@@ -1,10 +1,16 @@
 [gd_scene format=4 uid="uid://cd7mt04juyimu"]
 
+[ext_resource type="Script" uid="uid://dtffh237g8vhh" path="res://src/rooms/south_room.gd" id="1_8u55p"]
+
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_tdkvo"]
 _data = PackedByteArray("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")
 size_override = Vector2(1100, 650)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gg2c"]
+size = Vector2(98, 14)
+
 [node name="SouthRoom" type="StaticBody2D" unique_id=1891704394]
+script = ExtResource("1_8u55p")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1996638778]
 texture_filter = 1
@@ -36,3 +42,14 @@ metadata/_aseprite_wizard_source_file_hash_ = "777f445347185b216d5aad1b7946136e"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=600454592]
 polygon = PackedVector2Array(0, 0, 498.99994, -6.1035156e-05, 500.99994, 1.999939, 500.99994, 13.999939, 495.99994, 18.999939, 19, 19, 19, 631, 1081, 630.9999, 1081, 18.999878, 603.99994, 18.999939, 598.99994, 13.999939, 598.99994, 1.999939, 600.99994, -6.1035156e-05, 1100, -0.00012207031, 1100, 649.9999, 0, 650)
+
+[node name="EgressPoints" type="Node2D" parent="." unique_id=1330839157]
+
+[node name="NorthExit" type="Area2D" parent="EgressPoints" unique_id=643895501]
+position = Vector2(550, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EgressPoints/NorthExit" unique_id=1526559296]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_3gg2c")
+
+[connection signal="body_entered" from="EgressPoints/NorthExit" to="." method="_on_north_exit_body_entered"]

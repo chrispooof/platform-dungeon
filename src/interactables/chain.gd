@@ -14,7 +14,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	the player to lock them to the chain's X position and allow climbing.
 	"""
 	if body.is_in_group("player"):
-		print("Player entered chain area")
 		body.set_near_chain(self)
 
 
@@ -24,5 +23,4 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 	the player to unlock them from the chain.
 	"""
 	if body.is_in_group("player"):
-		print("Player exited chain area")
 		body.clear_near_chain(self)
