@@ -14,7 +14,7 @@ TBA
 
 ### Mini Map
 
-TBA
+<video src="https://github.com/user-attachments/assets/d4cb3ab3-7ca9-4c3a-affa-3207b9b640eb" controls ></video>
 
 ### Climb Chain and Ladders
 
