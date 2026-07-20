@@ -3,10 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://bp6m4w5ix47gl" path="res://scenes/platforms/platform.tscn" id="1_c4but"]
 [ext_resource type="Script" uid="uid://cu1la4m5yfxnd" path="res://src/rooms/central_room.gd" id="1_d04ri"]
 [ext_resource type="PackedScene" uid="uid://ctw1ocr1y5j07" path="res://scenes/interactables/chain.tscn" id="2_l8n7o"]
+[ext_resource type="PackedScene" uid="uid://dfjqggjwhlwqx" path="res://scenes/ladder.tscn" id="4_gn5jc"]
 
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_c4but"]
 _data = PackedByteArray("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")
 size_override = Vector2(1100, 650)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sh0ij"]
+size = Vector2(99.5, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l8n7o"]
 size = Vector2(98, 14)
@@ -50,6 +54,15 @@ metadata/_aseprite_wizard_config_ = {
 }
 metadata/_aseprite_wizard_source_file_hash_ = "e97795c94554c0fd91d85e2af54fd43e"
 
+[node name="Ladders" type="Node2D" parent="." unique_id=299597084]
+position = Vector2(0, -3)
+
+[node name="EastLadder" parent="Ladders" unique_id=637095417 instance=ExtResource("4_gn5jc")]
+position = Vector2(1015, 500)
+
+[node name="WestLadder" parent="Ladders" unique_id=1103953676 instance=ExtResource("4_gn5jc")]
+position = Vector2(85, 500)
+
 [node name="NorthWestWall" type="CollisionPolygon2D" parent="." unique_id=286010047]
 polygon = PackedVector2Array(0, 0, 0, 276, 14, 276, 19, 271, 19, 19, 496, 19, 501, 14, 501, 0)
 
@@ -57,15 +70,26 @@ polygon = PackedVector2Array(0, 0, 0, 276, 14, 276, 19, 271, 19, 19, 496, 19, 50
 position = Vector2(43, 83)
 polygon = PackedVector2Array(556, -83, 556, -69, 561, -64, 1038, -64, 1038, 188, 1043, 193, 1057, 193, 1057, -83)
 
+[node name="SouthWestWallPlatform" type="CollisionShape2D" parent="." unique_id=614293968]
+position = Vector2(49.5, 385)
+shape = SubResource("RectangleShape2D_sh0ij")
+one_way_collision = true
+
 [node name="SouthWestWall" type="CollisionPolygon2D" parent="." unique_id=318419126]
 position = Vector2(1057, 566)
 rotation = -3.1415925
-polygon = PackedVector2Array(556, -84.00012, 556, -70.00012, 561, -65.00012, 1038, -65.00018, 1038, 166.99982, 1035.0001, 169.99982, 963.00006, 169.99982, 958.00006, 174.99982, 958.00006, 186.99982, 963.00006, 191.99982, 1055.0001, 191.99982, 1057.0001, 189.99982, 1057, -84.00018)
+polygon = PackedVector2Array(556, -84.00012, 556, -70.00012, 561, -65.00012, 1038, -65.00018, 1038.0001, 169.99982, 1057.0001, 169.99982, 1057, -84.00018)
+one_way_collision_margin = 0.0
+
+[node name="SouthEastWallPlatform" type="CollisionShape2D" parent="." unique_id=725131109]
+position = Vector2(1050.75, 385)
+shape = SubResource("RectangleShape2D_sh0ij")
+one_way_collision = true
 
 [node name="SouthEastWall" type="CollisionPolygon2D" parent="." unique_id=566035657]
 position = Vector2(1100, 650)
 rotation = -3.1415925
-polygon = PackedVector2Array(0, 0, 0.00012207031, 273.99997, 2.000122, 275.99997, 94.00006, 275.99997, 99.00006, 270.99997, 99.00006, 258.99997, 94.00006, 253.99997, 22.000122, 253.99997, 19.000122, 250.99997, 19, 19, 277.7279, 19, 496, 19, 501, 14, 501, 0)
+polygon = PackedVector2Array(0, 0, 0.00012207031, 253.99997, 19.000122, 253.99997, 19, 19, 496, 19, 501, 14, 501, 0)
 
 [node name="Chain" parent="." unique_id=843101267 instance=ExtResource("2_l8n7o")]
 position = Vector2(550, 137)

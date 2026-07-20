@@ -5,6 +5,11 @@ const JUMP_VELOCITY := -400.0
 const SCREEN_WIDTH := 1100
 const SCREEN_HEIGHT := 650
 
+# Dash Ability
+const DASH_SPEED := 800.0
+const DASH_DURATION := 0.2
+const DASH_COOLDOWN := 1.0
+
 # Sizes for platforms and traps, used for extracting geometry data from rooms
 const PLATFORM_SIZE := Vector2(107.0, 22.0)
 const TRAP_SIZE := Vector2(52.0, 12.0)

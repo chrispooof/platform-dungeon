@@ -11,6 +11,7 @@ script = ExtResource("1_o5qli")
 
 [node name="Frame" type="Node2D" parent="RoomManager" unique_id=1167424425]
 
-[node name="Player" parent="." unique_id=820395575 groups=["player"] instance=ExtResource("2_0wfyh")]
+[node name="Player" parent="." unique_id=820395575 instance=ExtResource("2_0wfyh")]
+top_level = true
 
 [node name="HUD" parent="." unique_id=1769488607 instance=ExtResource("3_sugp2")]

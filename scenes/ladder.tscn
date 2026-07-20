@@ -1,0 +1,47 @@
+[gd_scene format=4 uid="uid://dfjqggjwhlwqx"]
+
+[ext_resource type="Script" uid="uid://dm73qmlpicndb" path="res://src/interactables/ladder.gd" id="1_xxwne"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_htnmx"]
+_data = PackedByteArray("AAADAAUAAAABAAAACgAAAPYAAABgAAAAUklGRlgAAABXRUJQVlA4TEwAAAAvCUA9EB8gEEj2tzs6IQHh/0rNAQMEAoT/Bj9GhMx/BGxlBzWRJCln4EbqO3oDKJEx+/osov9CgsRoYgcCgnGkjMrITvt1nnRv+1EP")
+size_override = Vector2(10, 246)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htnmx"]
+size = Vector2(10, 246)
+
+[node name="Ladder" type="Node2D" unique_id=637095417]
+script = ExtResource("1_xxwne")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=976687191]
+texture_filter = 1
+texture = SubResource("PortableCompressedTexture2D_htnmx")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://assets/ladder.aseprite",
+"source_uid": 6696710150907445125
+}
+metadata/_aseprite_wizard_source_file_hash_ = "f186152ae04f33f96cd442df60d121b1"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1824365209]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=318245619]
+shape = SubResource("RectangleShape2D_htnmx")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
