@@ -18,7 +18,7 @@ TBA
 
 ### Climb Chain and Ladders
 
-TBA
+<video src="https://github.com/user-attachments/assets/9d000103-d455-4179-985a-72b6ede2e7a4" controls></video>
 
 ## Requirements
 
