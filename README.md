@@ -10,7 +10,7 @@ TBA
 
 ### Dash
 
-TBA
+<video src="https://github.com/user-attachments/assets/ea005b3e-0149-4a20-b3df-60df3b2d7ff6" controls ></video>
 
 ### Mini Map
 
@@ -18,7 +18,7 @@ TBA
 
 ### Climb Chain and Ladders
 
-<video src="https://github.com/user-attachments/assets/9d000103-d455-4179-985a-72b6ede2e7a4" controls></video>
+<video src="https://github.com/user-attachments/assets/9d000103-d455-4179-985a-72b6ede2e7a4" controls ></video>
 
 ## Requirements
 
