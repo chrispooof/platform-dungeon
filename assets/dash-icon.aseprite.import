@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://3tx4dx20owhq"
+path="res://.godot/imported/dash-icon.aseprite-d603da441fe2e7871390ce8b211e9a2f.res"
+
+[deps]
+
+source_file="res://assets/dash-icon.aseprite"
+dest_files=["res://.godot/imported/dash-icon.aseprite-d603da441fe2e7871390ce8b211e9a2f.res"]
+
+[params]
+

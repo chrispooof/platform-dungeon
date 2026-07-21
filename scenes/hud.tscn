@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bw6yovtd3kr7s"]
 
 [ext_resource type="Script" uid="uid://cys2bkbc8lees" path="res://src/hud/hud.gd" id="1_ahhtf"]
+[ext_resource type="Texture2D" uid="uid://dagtutvn37jjy" path="res://assets/dash-icon.png" id="2_oo0fn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cqjsj"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -106,3 +107,30 @@ offset_right = 63.5
 offset_bottom = 73.0
 grow_horizontal = 2
 text = "Press \"E\""
+
+[node name="Abilities" type="HBoxContainer" parent="." unique_id=2138894534]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="DashIcon" type="Control" parent="Abilities" unique_id=1106798993]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Abilities/DashIcon" unique_id=1485727358]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -47.0
+offset_right = 71.0
+offset_bottom = 1.0
+texture = ExtResource("2_oo0fn")
+
+[node name="Label" type="Label" parent="Abilities/DashIcon" unique_id=1541004676]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 1.0
+offset_right = 81.0
+offset_bottom = 24.0
+text = "Dash - Q"

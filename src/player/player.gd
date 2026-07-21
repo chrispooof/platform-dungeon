@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var interact_prompt = $"../HUD/InteractPrompt"
+@onready var abilities = $"../HUD/Abilities"
 @onready var camera = $PlayerCamera
 
 var is_on_climbable: bool = false
@@ -53,6 +54,7 @@ func _physics_process(delta: float) -> void:
 		dash_cooldown_left -= delta
 
 	if is_dashing:
+		abilities.get_node("DashIcon/TextureRect").modulate.a = 0.5
 		dash_time_left -= delta
 
 		velocity.x = facing_direction * Constants.DASH_SPEED
@@ -62,6 +64,8 @@ func _physics_process(delta: float) -> void:
 			is_dashing = false
 
 		return
+	else:
+		abilities.get_node("DashIcon/TextureRect").modulate.a = 1.0
 
 	# Add the gravity.
 	if not is_on_floor():
